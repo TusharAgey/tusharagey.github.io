@@ -1,2 +1,2 @@
-# sardapv.github.io
+# tusharagey.github.io
 My personal portfolio
