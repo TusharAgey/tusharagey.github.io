@@ -39,6 +39,92 @@
       }
 		</style>
 		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+		<script type="text/javascript">
+			const HOST_OS = navigator.userAgent.indexOf("Android")
+							? "ANDROID"
+								: navigator.userAgent.indexOf("like Mac")
+									? "IOS"
+									: "WEB" ;
+
+			const OS_TO_RESOURCE_LINK = {
+				ASHANA_YT: {
+					IOS: "vnd.youtube://youtube.com/@AshanaSule?si=kgQyx0q81Vlfbh0-",
+					ANDROID: "intent://youtube.com/@AshanaSule?si=kgQyx0q81Vlfbh0-#Intent;package=com.google.android.youtube;scheme=https;end",
+					WEB: "https://youtube.com/@AshanaSule?si=kgQyx0q81Vlfbh0-"
+				},
+				ASHNA_RECOMM_YT: {
+					IOS: "vnd.youtube://youtube.com/watch?v=AlWcNoCnUok",
+					ANDROID: "intent://youtube.com/watch?v=AlWcNoCnUok#Intent;package=com.google.android.youtube;scheme=https;end",
+					WEB: "https://www.youtube.com/watch?v=AlWcNoCnUok"
+				},
+				MICHELE_CHOI_YT: {
+					IOS: "vnd.youtube://youtube.com/@michellechoii",
+					ANDROID: "intent://youtube.com/@michellechoii#Intent;package=com.google.android.youtube;scheme=https;end",
+					WEB: "https://www.youtube.com/@michellechoii" 
+				},
+				KIMONO_MOM_YT: {
+					IOS: "vnd.youtube://youtube.com/@KimonoMom",
+					ANDROID: "intent://youtube.com/@KimonoMom#Intent;package=com.google.android.youtube;scheme=https;end",
+					WEB: "https://www.youtube.com/@KimonoMom" 
+				},
+				KIMONO_MOM_RECOMM: {
+					IOS: "vnd.youtube://youtube.com/watch?v=Zt6LYXj4skM",
+					ANDROID: "intent://youtube.com/watch?v=Zt6LYXj4skM#Intent;package=com.google.android.youtube;scheme=https;end",
+					WEB: "https://www.youtube.com/watch?v=Zt6LYXj4skM"
+				},
+				RANVEER_BRAR_YT: {
+					IOS: "vnd.youtube://youtube.com/@RanveerBrar",
+					ANDROID: "intent://youtube.com/@RanveerBrar#Intent;package=com.google.android.youtube;scheme=https;end",
+					WEB: "https://www.youtube.com/@RanveerBrar"
+				},
+				INSIDE_OUT_HOTSTAR: {
+					IOS: "",
+					ANDROID: "",
+					WEB: "https://www.hotstar.com/in/movies/inside-out/1260018307"
+				},
+				ELEMENTALS_HOTSTAR: {
+					IOS: "",
+					ANDROID: "",
+					WEB: "https://www.hotstar.com/in/movies/elemental/1260147564" 
+				},
+				BIG_HERO_6_HOTSTAR: {
+					IOS: "",
+					ANDROID: "",
+					WEB: "https://www.hotstar.com/in/movies/big-hero-6/1260018153"
+				},
+				FROZEN_HOTSTAR: {
+					IOS: "",
+					ANDROID: "",
+					WEB: "https://www.hotstar.com/in/movies/frozen/1260018197" 
+				},
+				HOMETOWN_CHA_CHA_CHA_NETFLIX: {
+					IOS: "",
+					ANDROID: "",
+					WEB: "https://www.netflix.com/in/title/81473182?trackId=255824129"
+				},
+				START_UP_NETFLIX: {
+					IOS: "",
+					ANDROID: "",
+					WEB: "https://www.netflix.com/watch/81325330?trackId=255824129"
+				},
+				ANGERLS_LAST_MISSION_NETFLIX: {
+					IOS: "",
+					ANDROID: "",
+					WEB: "https://www.netflix.com/watch/81279128?trackId=255824129"
+				},
+				IAM_NOT_A_ROBOT_NETFLIX: {
+					IOS: "",
+					ANDROID: "",
+					WEB: "https://www.netflix.com/watch/81042334?trackId=255824129"
+				},
+				STILL_17_NETFLIX: {
+					IOS: "",
+					ANDROID: "",
+					WEB: "https://www.netflix.com/watch/81225111?trackId=255824129"
+				}
+			};
+
+	</script>
 
 	</head>
 
@@ -115,7 +201,7 @@ background: linear-gradient(to right, #070000, #4C0001, #070000); /* W3C, IE 10+
 														
 														<ul>
 															<li>
-																 <a style="text-decoration: underline; color: blue;"  href="vnd.youtube://youtube.com/@AshanaSule?si=kgQyx0q81Vlfbh0-" target="_blank" rel="noopener"> Ashana Sule </a>: Lifestyle and fun channel 
+																 <a style="text-decoration: underline; color: blue;" onclick="location.href= OS_TO_RESOURCE_LINK.ASHANA_YT[HOST_OS] ;return false;"  target="_blank" rel="noopener"> Ashana Sule </a>: Lifestyle and fun channel 
 																<ul>
 																	<li>
 																		Recommendation:  <a style="text-decoration: underline; color: blue;" href="https://youtu.be/AlWcNoCnUok?si=0bd_jo7vLPfOqca0" target="_blank" rel="noopener"> My current music playlist! Songs that make me feel good :)</a>
