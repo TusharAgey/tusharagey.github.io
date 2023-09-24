@@ -40,9 +40,9 @@
 		</style>
 		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 		<script type="text/javascript">
-			const HOST_OS = navigator.userAgent.indexOf("Android")
+			const HOST_OS = navigator.userAgent.indexOf("Android") != -1
 							? "ANDROID"
-								: navigator.userAgent.indexOf("like Mac")
+								: navigator.userAgent.indexOf("like Mac") != -1
 									? "IOS"
 									: "WEB" ;
 
